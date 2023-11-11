@@ -13,5 +13,9 @@ def test_add_customer():
 
     browser.element('body > div > div > div.ng-scope > div > div.borderM.box.padT20 > div:nth-child(3) > button').click()
     browser.element('body > div > div > div.ng - scope > div > div.center > button: nth - child(1)')
-
-    time.sleep(1)
+    browser.element('[ng-class=btnClass1]').click()
+    browser.element('[ng-model=fName]').type('Piter')
+    browser.element('[ng-model=lName]').type('Pen')
+    browser.element('[ng-model=postCd]').type('E12345')
+    browser.element('[class="btn btn-default"]').click()
+    # browser.element('*').click()
