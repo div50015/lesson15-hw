@@ -1,5 +1,5 @@
 import time
-from selene import browser, have
+from selene import browser, have, be
 import os
 from selene import command
 
@@ -17,10 +17,14 @@ def test_add_customer():
     browser.element('[ng-model=fName]').type('Piter')
     browser.element('[ng-model=lName]').type('Pen')
     browser.element('[ng-model=postCd]').type('E12345')
-    time.sleep(3)
+    # time.sleep(3)
     browser.element('[class="btn btn-default"]').click()
-    time.sleep(3)
+    # time.sleep(3)
     browser.switch_to.alert.accept()
-    time.sleep(3)
+    # time.sleep(3)
     browser.element('[ng-class="btnClass3"]').click()
-    time.sleep(10)
+    time.sleep(1)
+    # a = browser.all('td').all('.ng-binding').element_by(have.text('E12345')).locate().text
+    browser.all('td').element_by(have.exact_text('E12345')).should(have.exact_texts('E12345'))
+    # print(a)
+    time.sleep(1)
