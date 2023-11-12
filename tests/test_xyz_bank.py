@@ -23,8 +23,8 @@ def test_add_customer():
     browser.switch_to.alert.accept()
     # time.sleep(3)
     browser.element('[ng-class="btnClass3"]').click()
-    time.sleep(1)
-    # a = browser.all('td').all('.ng-binding').element_by(have.text('E12345')).locate().text
-    browser.all('td').element_by(have.exact_text('E12345')).should(have.exact_texts('E12345'))
+    # time.sleep(1)
+    # browser.element('tr:nth-child(6) td:nth-child(3)').should(have.exact_text('E12345'))
+    browser.all('tr:nth-child(6)>td')[:3].should(have.exact_texts('Piter', 'Pen', 'E12345'))
     # print(a)
-    time.sleep(1)
+    # time.sleep(1)
