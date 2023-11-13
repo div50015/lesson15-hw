@@ -1,5 +1,5 @@
 import time
-from selene import browser, have, be
+from selene import browser, have, be, query
 import os
 from selene import command
 
@@ -12,22 +12,33 @@ def test_add_customer():
     browser.element('[ng-model=lName]').type('Pen')
     browser.element('[ng-model=postCd]').type('E12345')
     browser.element('[class="btn btn-default"]').click()
+
     browser.switch_to.alert.accept()
+
     browser.element('[ng-class="btnClass3"]').click()
 
     browser.all('tr').element_by(have.text('Piter')).should(have.text('Piter Pen E12345'))
-    time.sleep(5)
+
     browser.element('[ng-click="home()"]').click()
 
     browser.element('[ng-click="manager()"]').click()
-    time.sleep(5)
+
     browser.element('[ng-class="btnClass3"]').click()
-    time.sleep(5)
+
     browser.element('[ng-model=searchCustomer]').type('Piter')
-    time.sleep(5)
+
     browser.element('[ng-click="deleteCust(cust)"]').click()
-    time.sleep(5)
 
 
+def test_deopsit_and_withdrawal():
+    browser.open('/')
+
+    browser.element('[ng-click="customer()"]').click()
+    browser.element('#userSelect').type('Harry Potter')
+    browser.element('[ng-show="custId != \'\'"]').click()
+    time.sleep(10)
+    # aaa = browser.all('strong:nth-child(2)').element('.ng-binding').get(query.text)
+    browser.all('strong:nth-child(2)').element_by(have.).should(have.text(7777))
+    # print(aaa)
 
 
