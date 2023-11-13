@@ -36,9 +36,9 @@ def test_deopsit_and_withdrawal():
     browser.element('[ng-click="customer()"]').click()
     browser.element('#userSelect').type('Harry Potter')
     browser.element('[ng-show="custId != \'\'"]').click()
-    time.sleep(10)
-    # aaa = browser.all('strong:nth-child(2)').element('.ng-binding').get(query.text)
-    browser.all('strong:nth-child(2)').element_by(have.).should(have.text(7777))
+    # time.sleep(10)
+    browser.all('strong:nth-child(2)').second.should(have.text('0'))
+    # aaa = browser.all('strong:nth-child(2)').second.locate().text
     # print(aaa)
 
 
