@@ -36,9 +36,28 @@ def test_deopsit_and_withdrawal():
     browser.element('[ng-click="customer()"]').click()
     browser.element('#userSelect').type('Harry Potter')
     browser.element('[ng-show="custId != \'\'"]').click()
-    # time.sleep(10)
     browser.all('strong:nth-child(2)').second.should(have.text('0'))
-    # aaa = browser.all('strong:nth-child(2)').second.locate().text
-    # print(aaa)
 
+    browser.element('[ng-click="deposit()"]').click()
+    browser.element('input[ng-model=amount]').type('100')
+    browser.element('button[type=submit]').click()
+    browser.element('span[ng-show=message]').should(have.exact_text('Deposit Successful'))
+
+    browser.element('[ng-click="home()"]').click()
+
+    browser.element('[ng-click="customer()"]').click()
+    browser.element('#userSelect').type('Harry Potter')
+    browser.element('[ng-show="custId != \'\'"]').click()
+    browser.all('strong:nth-child(2)').second.should(have.text('100'))
+
+    browser.element('[ng-click="withdrawl()"]').click()
+    browser.element('input[ng-model=amount]').type('70')
+    browser.element('button[type=submit]').click()
+    browser.element('span[ng-show=message]').should(have.exact_text('Transaction successful'))
+    browser.element('[ng-click="home()"]').click()
+
+    browser.element('[ng-click="customer()"]').click()
+    browser.element('#userSelect').type('Harry Potter')
+    browser.element('[ng-show="custId != \'\'"]').click()
+    browser.all('strong:nth-child(2)').second.should(have.text('30'))
 
