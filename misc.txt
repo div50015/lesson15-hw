@@ -14,6 +14,9 @@ curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1002037565494
 
 java -jar "-DconfigFile=./notifications/telegram.json" ./notifications/allure-notifications-4.5.0.jar
 
+jenkins
 lesson12-hw_first_jenkins
-
 lesson15-hw_jenkins_full_project
+
+Allure TestOps
+lesson15-hw_full_project
