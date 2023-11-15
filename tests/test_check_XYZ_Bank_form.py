@@ -4,15 +4,9 @@ import os
 from selene import command
 import allure
 
-def test_add_customer():
-    allure.dynamic.title('Проверка наличия названия Issue в репозитории')
-    allure.dynamic.tag('web')
-    allure.dynamic.severity(severity_level='Critical')
-    allure.dynamic.feature("Issues")
-    allure.dynamic.story("Тест lambda steps")
-    allure.dynamic.link("https://github.com/", name='Testing')
-    allure.dynamic.label('owner', 'div50015')
 
+@allure.title("Проверка добавления и удаления заказчика")
+def test_add_customer():
     with allure.step('Открытие формы'):
         browser.open('/')
 
@@ -37,15 +31,18 @@ def test_add_customer():
         browser.element('[ng-click="deleteCust(cust)"]').click()
 
 
-def test_deopsit_and_withdrawal():
-
+@allure.title("Проверка открытия формы и состояния счета")
+def test_check_deposite():
     with allure.step('Открытие формы'):
         browser.open('/')
+        browser.element('.mainHeading').should(have.exact_text('XYZ Bank'))
 
-    with allure.step('Проверка состояния счета'):
+    with allure.step('Выбор заказчика'):
         browser.element('[ng-click="customer()"]').click()
         browser.element('#userSelect').type('Harry Potter')
         browser.element('[ng-show="custId != \'\'"]').click()
+
+    with allure.step('Проверка состояния счета'):
         browser.all('strong:nth-child(2)').second.should(have.text('0'))
 
     with allure.step('Пополнение счета'):
@@ -54,7 +51,7 @@ def test_deopsit_and_withdrawal():
         browser.element('button[type=submit]').click()
         browser.element('span[ng-show=message]').should(have.exact_text('Deposit Successful'))
 
-    with allure.step('Проверка состояния счета'):
+    with allure.step('Проверка состояния счета после пополнения'):
         browser.element('[ng-click="home()"]').click()
         browser.element('[ng-click="customer()"]').click()
         browser.element('#userSelect').type('Harry Potter')
@@ -68,9 +65,11 @@ def test_deopsit_and_withdrawal():
         browser.element('span[ng-show=message]').should(have.exact_text('Transaction successful'))
         browser.element('[ng-click="home()"]').click()
 
-    with allure.step('Проверка состояния счета'):
+    with allure.step('Проверка состояния счета после списания'):
         browser.element('[ng-click="customer()"]').click()
         browser.element('#userSelect').type('Harry Potter')
         browser.element('[ng-show="custId != \'\'"]').click()
         browser.all('strong:nth-child(2)').second.should(have.text('30'))
+
+
 
