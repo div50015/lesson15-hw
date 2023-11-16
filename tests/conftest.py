@@ -18,7 +18,7 @@ def browser_management():
     options.capabilities.update(selenoid_capabilities)
     driver = webdriver.Remote(command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub",options=options)
 
-    browser.config.driver = driver
+    # browser.config.driver = driver
     browser.config.base_url = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login'
     browser.config.timeout = 2.0
     browser.config.window_width = 1200
