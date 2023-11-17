@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 t.me/qaalluretest_bot
 @qaalluretest_bot
 
