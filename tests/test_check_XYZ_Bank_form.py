@@ -71,5 +71,3 @@ def test_check_deposite():
         browser.element('[ng-show="custId != \'\'"]').click()
         browser.all('strong:nth-child(2)').second.should(have.text('30'))
 
-
-

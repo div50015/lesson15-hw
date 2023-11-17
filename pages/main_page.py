@@ -76,3 +76,5 @@ class MainPage:
         browser.element('[ng-click="manager()"]').click()
         browser.element('[ng-class="btnClass3"]').click()
         browser.all('tr').element_by(have.text(f'{user.f_name}')).should(be.not_.existing)
+
+

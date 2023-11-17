@@ -13,3 +13,5 @@ def test_add_customer():
 
     # with allure.step('Проверка существования клиента'):
         browser.all('tr').element_by(have.text('Potter')).should(have.text('Harry Potter E725JB'))
+
+

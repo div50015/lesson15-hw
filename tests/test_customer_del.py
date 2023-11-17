@@ -25,3 +25,5 @@ def test_del_customer():
 
     with (allure.step('Проверка удаления клиента')):
         main_page.check_del_customer(customer)
+
+

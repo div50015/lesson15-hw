@@ -37,3 +37,5 @@ def test_check_deposite():
 
     with allure.step('Проверка состояния счета после списания'):
         main_page.check_deposit_after_withdrawl(30, customer)
+
+

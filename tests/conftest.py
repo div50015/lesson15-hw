@@ -63,3 +63,4 @@ def browser_management(request):
     attach.add_video(browser)
 
     browser.quit()
+

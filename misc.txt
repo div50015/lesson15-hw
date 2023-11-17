@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 t.me/qaalluretest_bot
 @qaalluretest_bot
 
@@ -23,3 +20,4 @@ lesson15-hw_jenkins_full_project
 
 Allure TestOps
 lesson15-hw_full_project
+

@@ -27,3 +27,5 @@ def test_check_deposite():
 
     with allure.step('Проверка состояния счета после пополнения'):
         main_page.chech_deposit_after_add(100, customer)
+
+

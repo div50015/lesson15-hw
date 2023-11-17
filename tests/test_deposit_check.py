@@ -21,3 +21,5 @@ def test_check_deposite():
 
     with allure.step('Проверка состояния счета'):
         main_page.check_deposit(0)
+
+
