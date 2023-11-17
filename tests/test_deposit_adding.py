@@ -2,6 +2,7 @@ import allure
 from pages.main_page import MainPage
 from data.user import Customer
 
+
 @allure.title("Проверка пополнения счета")
 def test_check_deposite():
     main_page = MainPage()
@@ -11,7 +12,6 @@ def test_check_deposite():
         l_name='Potter',
         n_id='E725JB'
     )
-
 
     with allure.step('Открытие формы'):
         main_page.open()
@@ -27,7 +27,3 @@ def test_check_deposite():
 
     with allure.step('Проверка состояния счета после пополнения'):
         main_page.chech_deposit_after_add(100, customer)
-
-
-
-

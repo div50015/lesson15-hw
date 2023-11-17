@@ -3,6 +3,7 @@ import allure
 from pages.main_page import MainPage
 from data.user import Customer
 
+
 @allure.title("Проверка удаления клиента")
 def test_del_customer():
     main_page = MainPage()
@@ -18,7 +19,6 @@ def test_del_customer():
 
     with allure.step('Добавление клиента'):
         main_page.add_customer(customer)
-
 
     with allure.step('Удаление клиента'):
         main_page.del_customer(customer)
