@@ -77,4 +77,11 @@ class MainPage:
         browser.element('[ng-class="btnClass3"]').click()
         browser.all('tr').element_by(have.text(f'{user.f_name}')).should(be.not_.existing)
 
+    # with allure.step('Переход к списку клиентов'):
+    def list_customers(self):
+        browser.element('[ng-click="manager()"]').click()
+        browser.element('[ng-class="btnClass3"]').click()
 
+    # with allure.step('Проверка существования клиента'):
+    def check_customer_existence(self, user: Customer):
+        browser.all('tr').element_by(have.text(user.f_name)).should(have.text(f'{user.f_name} {user.l_name} {user.n_id}'))

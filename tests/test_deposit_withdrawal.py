@@ -1,16 +1,15 @@
-import time
-from selene import browser, have, be, query
-import os
-from selene import command
 import allure
 from pages.main_page import MainPage
 from data.user import Customer
 
 
+@allure.tag("web")
+@allure.label("owner", "div50015")
 @allure.title("Проверка списания со счета")
 def test_check_deposite():
     main_page = MainPage()
 
+    # GIVEN
     customer = Customer(
         f_name='Harry',
         l_name='Potter',
@@ -20,6 +19,7 @@ def test_check_deposite():
     with allure.step('Открытие формы'):
         main_page.open()
 
+    # WHEN
     with allure.step('Выбор клиента'):
         main_page.select_customer(customer)
 
@@ -35,6 +35,7 @@ def test_check_deposite():
     with allure.step('Списание со счета'):
         main_page.withdrawl_deposit(70)
 
+    # THEN
     with allure.step('Проверка состояния счета после списания'):
         main_page.check_deposit_after_withdrawl(30, customer)
 
