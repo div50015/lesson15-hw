@@ -63,7 +63,7 @@ allure serve build/allure-results
 ### Allure отчет
 #### Общие результаты
 
-![allure_report_overview](.\pictures\allure_all.jpg)
+![allure_report_overview](./pictures/allure_all.jpg)
 
 #### Список тест кейсов
 
