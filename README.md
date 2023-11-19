@@ -18,16 +18,7 @@
 
 ### Используемый стэк
 
-<img title="Python" src="./pictures/python-original.svg" height="40" width="40"/> 
-<img title="Pytest" src="./pictures/pytest-original.svg" height="40" width="40"/> 
-<img title="Pycharm" src="./pictures/pycharm.png" height="40" width="40"/> 
-<img title="Selenium" src="./pictures/selenium-original.svg" height="40" width="40"/> 
-<img title="Selene" src="./pictures/selene.png" height="40" width="40"/> 
-<img title="GitHub" src="./pictures/github-original.svg" height="40" width="40"/> 
-<img title="Allure Report" src="./pictures/Allure_Report.png" height="40" width="40"/> 
-<img title="Allure TestOps" src="./pictures/AllureTestOps.png" height="40" width="40"/>
-<img title="Telegram" src="./pictures/tg.png" height="40" width="40"/>
-<img title="Jira" src="./pictures/jira-original.svg" height="40" width="40"/> 
+<img title="Python" src="./pictures/python-original.svg" height="40" width="40"/> <img title="Pytest" src="./pictures/pytest-original.svg" height="40" width="40"/> <img title="Pycharm" src="./pictures/pycharm.png" height="40" width="40"/> <img title="Selenium" src="./pictures/selenium-original.svg" height="40" width="40"/> <img title="Selene" src="./pictures/selene.png" height="40" width="40"/> <img title="GitHub" src="./pictures/github-original.svg" height="40" width="40"/> <img title="Allure Report" src="./pictures/Allure_Report.png" height="40" width="40"/> <img title="Allure TestOps" src="./pictures/AllureTestOps.png" height="40" width="40"/><img title="Telegram" src="./pictures/tg.png" height="40" width="40"/><img title="Jira" src="./pictures/jira-original.svg" height="40" width="40"/> 
 
 ----
 
