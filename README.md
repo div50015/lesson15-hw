@@ -61,7 +61,7 @@ allure serve build/allure-results
 
 
 #### Запуск автотестов в Jenkins
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">проект</a>
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/lesson15-hw_jenkins_full_project//">проект</a>
 2. Нажать "Build with Parameters"
 3. Из списка "ENVIRONMENT" выбрать: PROD
 4. В поле "COMMENT" ввести комментарий
@@ -70,54 +70,49 @@ allure serve build/allure-results
 ----
 
 ### Allure отчет
-#### Общие результаты 
-![allure_report_overview](qa_guru_python_8_15/pictures/allure_report_overview.png)
+#### Общие результаты
 
-#### Результаты прохождения теста
-![allure_reports_behaviors](qa_guru_python_8_15/pictures/allure_reports_behaviors.png)
+![allure_report_overview](\pictures\allure_all.jpg)
 
-#### Графики
+#### Список тест кейсов
 
-![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_1.png)
-![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_2.png)
+![allure_reports_behaviors](\pictures\allure_behaviors.jpg)
+
+#### Отчет прохождения теста
+
+![allure_reports_graphs](\pictures\test_report.jpg)
+
 
 ----
 
 ### Интеграция с Allure TestOps
-> <a target="_blank" href="https://allure.autotests.cloud/project/3782/dashboards">Ссылка на проект</a>
+> <a target="_blank" href="https://allure.autotests.cloud/project/3787/dashboards">Ссылка на проект</a>
 
 #### Дашборд с общими показателями тестовых прогонов
 
-![allure_test_ops_dashboards](qa_guru_python_8_15/pictures/allure_testops_dashboards.png)
+![allure_test_ops_dashboards](\pictures\allure_dashboards.jpg)
 
 #### История запуска тестовых наборов
 
-![allure_testops_launches](qa_guru_python_8_15/pictures/allure_testops_launches.png)
+![allure_testops_launches](\pictures\allure_launches.jpg)
 
 #### Тест кейсы
 
-![allure_testops_suites](qa_guru_python_8_15/pictures/allure_testops_suites.png)
+![allure_testops_suites](\pictures\allure_suites.jpg)
 
 ----
 
-### Интеграция с Jira
-> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-953">Ссылка на проект</a>
 
-![jira_project](qa_guru_python_8_15/pictures/jira_project.png)
-
-----
 
 ### Оповещения в Telegram
 
-![telegram_allert](/home/igor/PycharmProjects/lesson15-hw/pictures/telegram.png)
+![telegram_allert](\pictures\telegram.png)
 
 ----
 
 ### Видео прохождения автотеста
-![autotest_gif](qa_guru_python_8_15/pictures/autotest.gif)
+
+![autotest_gif](\pictures\video.gif)
 
 ----
 
-### Mind map тест плана
-
-![allure_reports_graphs](qa_guru_python_8_15/pictures/test-case-mind-map.png)
