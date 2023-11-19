@@ -71,7 +71,7 @@ allure serve build/allure-results
 
 #### Отчет прохождения теста
 
-![allure_reports_graphs]./pictures/test_report.jpg)
+![allure_reports_graphs](./pictures/test_report.jpg)
 
 
 ----
