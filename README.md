@@ -1,4 +1,4 @@
-# Проект по тестированию учедной формы BankingProject сайта "www.globalqa.com"
+# Проект по тестированию учебной формы BankingProject сайта "www.globalqa.com"
 > <a target="_blank" href="https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login">ссылка на форму</a>
 
 ![main page screenshot](./pictures/main_page.png)
