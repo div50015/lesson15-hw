@@ -67,11 +67,11 @@ allure serve build/allure-results
 
 #### Список тест кейсов
 
-![allure_reports_behaviors](\pictures\allure_behaviors.jpg)
+![allure_reports_behaviors](./pictures/allure_behaviors.jpg)
 
 #### Отчет прохождения теста
 
-![allure_reports_graphs](\pictures\test_report.jpg)
+![allure_reports_graphs]./pictures/test_report.jpg)
 
 
 ----
@@ -81,15 +81,15 @@ allure serve build/allure-results
 
 #### Дашборд с общими показателями тестовых прогонов
 
-![allure_test_ops_dashboards](\pictures\allure_dashboards.jpg)
+![allure_test_ops_dashboards](./pictures/allure_dashboards.jpg)
 
 #### История запуска тестовых наборов
 
-![allure_testops_launches](\pictures\allure_launches.jpg)
+![allure_testops_launches](./pictures/allure_launches.jpg)
 
 #### Тест кейсы
 
-![allure_testops_suites](\pictures\allure_suites.jpg)
+![allure_testops_suites](./pictures/allure_suites.jpg)
 
 ----
 
@@ -97,13 +97,13 @@ allure serve build/allure-results
 
 ### Оповещения в Telegram
 
-![telegram_allert](\pictures\telegram.png)
+![telegram_allert](./pictures/telegram.png)
 
 ----
 
 ### Видео прохождения автотеста
 
-![autotest_gif](\pictures\video.gif)
+![autotest_gif](./pictures/video.gif)
 
 ----
 
